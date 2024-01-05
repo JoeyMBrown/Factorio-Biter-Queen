@@ -1,0 +1,9 @@
+{
+    "name": "factorio-biter-queen",
+    "version": "0.1.0",
+    "title": "Factorio Biter Queen",
+    "author": "JoeyMBrown",
+    "factorio_version": "1.1",
+    "dependencies": ["base >= 1.1"],
+    "description": "This mod adds a Biter Queen enemy that acts as a new boss."
+  }
