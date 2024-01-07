@@ -6,8 +6,8 @@ script.on_event(defines.events.on_entity_spawned,
         if entity.name == "biter-queen" then
            local playerForce = game.forces["player"]
 
-           -- This chart may not be necessary, but prevents a situation in 
-           -- whichbiter-queen isn't spawned until initial chart has worn 
+           -- This chart may not be necessary, but prevents a situation in
+           -- which biter-queen isn't spawned until initial chart has worn
            -- off.  As this would cause the adding of chart tag to fail.
            playerForce.chart("nauvis", {{spawner.position["x"] - 20, spawner.position["y"] - 20}, {spawner.position["x"] + 20, spawner.position["y"] + 20}})
            playerForce.add_chart_tag("nauvis", {position = spawner.position, icon = {type = "virtual", name = "signal-info"}, text = "Biter Queen Hive"})
